@@ -1,0 +1,22 @@
+<!-- Write a function that accepts interest, principle, and tenure and calculates EMI.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculate EMI</title>
+</head>
+<body>
+    <script>
+        const R=parseFloat(prompt("Enter Interest rate")/100);
+        const P=parseFloat(prompt("Enter Principle amount"));
+        const N=parseFloat(prompt("Enter Tenure"));
+        function EMI(interest,principle,tenure){
+            let emi1= R*((1+R)**N)/((1+R))**(N-1);
+            let emi=P*emi1;
+            return emi;  
+        }
+        console.log(2**3);
+        
+        console.log(Math.round(EMI(R,P,N)));
+    </script>
+</body>
+</html>
