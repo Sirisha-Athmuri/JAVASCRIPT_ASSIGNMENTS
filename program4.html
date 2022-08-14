@@ -1,0 +1,27 @@
+<!--Program 4- Write a program to display student results. 
+		If number above 90 then grade A
+		If number above 70 and below 90 then grade B
+If number above 50 and below 70 then grade C
+If number below 70 then Fail
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student results</title>
+</head>
+<body>
+    <script>
+        const num =parseInt(prompt("Enter the value of number"));
+        if(num>90){
+            console.log('The Grade is A');
+        }else if(num>70 && num <90){
+            console.log('The Grade is B');
+        }else if (num>50 && num<70){
+            console.log('The Grade is C');
+        }else if(num<70){
+            console.log('The Grade is Fail');
+        }
+    </script>
+</body>
+</html>
